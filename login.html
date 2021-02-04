@@ -1,0 +1,51 @@
+
+<html>
+    <head> <title>demo1</title>
+        <link rel="stylesheet" href="style2.css"/>
+         <h1 align="center"><img src="logos.png"/></h1>
+<script type="text/javascript">
+    
+function validate()
+{
+    attempt=4;
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if(username == "mayur" && password == "mayur441")
+        {
+            alert("login sucessfull");
+            window.location="about.html";
+            return false;    
+        }
+        else
+        {
+         attempt --;
+            alert("you have left"+attempt+"attempt;");
+            if(attempt==0)
+                {
+                    document.getElementById("username").disabled=true;
+                    document.getElementById("password").disabled=true;
+                    document.getElementById("submit").disabled=true;                   
+                }
+        }
+}
+</script>
+</head>
+    
+    
+            <div class="container">
+                <div class="main">
+			
+                <center>
+			<form id="form_id" method="post" name="myform">
+                
+			<label>Username:</label>
+			<input type="text" placeholder="userid" name="username" id="username"/><br><br>
+			<label>Password :</label>
+			<input type="password" placeholder="password" name="password" id="password"/><br><br>
+			<input type="button" value="Login" id="submit" onclick="validate()"/>
+                    </form></center>
+        </div>
+        </div>
+            
+     </body>
+</html

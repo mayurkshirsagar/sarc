@@ -1,0 +1,332 @@
+
+<html>
+<head>
+
+<title>Book Store</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="wrap">
+
+       <div class="header">
+       		<div class="logo"><a href="index.html"><img src="images/logop.png" alt="" /></a></div>            
+        <div id="menu">
+            <ul>                                                                       
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="category.html">Books</a></li>
+          
+            <li><a href="myaccount.html">My Account</a></li>
+            <li class="selected"><a href="register.html">Register</a></li>
+
+            </ul>
+        </div>     
+            
+            
+       </div> 
+      
+       
+       <div class="center_content">
+       	<div class="left_content">
+            <div class="title"><span class="title_icon"><img src="images/bullet1.gif" alt="" title="" /></span>Register</div>
+        
+        	<div class="feat_prod_box_details">
+            <p class="details">
+             We offer huge collection of books in diverse category of Fiction,
+                <br>
+                Non-fiction, Biographies, History, Religions, Self -Help, Children.
+                <br>
+                We also sell in vast collection of Investments and Management,
+                <br>
+                Computers, Engineering, Medical, College and School text references
+                <br>
+                books proposed by different institutes as syllabus across the country.
+                <br>
+                Besides to this, we also offer a large collection of E-Books at very fair pricing.
+                
+            </p>
+          
+<div class="contact_form">
+		<div class="form_subtitle">create new account</div>	
+			<form name="register" action="#" onSubmit="return formValidation();">
+			<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+				<script src="sample-register-form-validation.js"></script>
+				
+					
+						<div class="form_row">
+						<label class="contact" for="userid"><strong>User id:</strong></label>
+						<input type="text" name="userid" />
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="passid"><strong>Password:</strong></label>
+						<input type="password" name="passid"  />
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="username"><strong>Name:</strong></label>
+						<input type="text" name="username"  />
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="address"><strong>Address:</strong></label>
+						<input type="text" name="address"  />
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="country"><strong>Country:</strong></label>
+						<select name="country">
+						<option selected="" value="Default">(Please select a country)</option>
+						<option value="AF">Australia</option>
+						<option value="AL">Canada</option>
+						<option value="DZ">India</option>
+						<option value="AS">Russia</option>
+						<option value="AD">USA</option>
+						</select>
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="zip"><strong>ZIP Code:</strong></label>
+						<input type="text" name="zip" />
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="email"><strong>Email:</strong></label>
+						<input type="text" name="email"  />
+						</div>
+
+						<div class="form_row">
+						<label class="contact" id="gender"><strong>Sex:</strong></label>
+						<input type="radio" name="msex" value="Male" /><span>Male</span>
+						<input type="radio" name="fsex" value="Female" /><span>Female</span>
+						</div>
+
+						<div class="form_row">
+						<label class="contact"><strong>Language:</strong></label>
+						<input type="checkbox" name="en" value="en" checked /><span>English</span>
+						<input type="checkbox" name="nonen" value="noen" /><span>Non English</span>
+						</div>
+
+						<div class="form_row">
+						<label class="contact" for="desc"><strong>About:</strong></label>
+						<textarea name="desc" id="desc"></textarea>
+						</div>
+
+						<div class="form_row">
+						<div class="terms">
+						<input type="checkbox" name="terms" />I agree to the <a href="#">terms &amp; conditions</a> 
+						</div>
+						</div> 
+					
+						<div class="form_row">
+						
+            <input type="submit" class="register" value="register" name="register" id="btn_submit"/>
+             <!--<input type="submit" name="submit" value="Submit" />-->
+						</div>
+				</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+        </div><!--end of left content-->
+        
+        <div class="right_content">   
+              <div class="cart">
+                  <div class="title"><span class="title_icon"><img src="images/cart.gif" alt="" title="" /></span>My cart</div>
+                  <div class="home_cart_content">
+                  </div>
+                  <a href="cart.html" class="view_cart">view cart</a>
+              </div>
+        
+             <div class="title"><span class="title_icon"><img src="images/bullet3.gif" alt="" title="" /></span>About Our Store</div> 
+             <div class="about">
+             <p>
+             <img src="images/about.gif" alt="" title="" class="right" />
+            We offer huge collection of books in diverse category of Fiction,
+                <br>
+                Non-fiction, Biographies, History, Religions, Self -Help, Children.
+                <br>
+                We also sell in vast collection of Investments and Management,
+                <br>
+                Computers, Engineering, Medical, College and School text references
+                <br>
+                books proposed by different institutes as syllabus across the country.
+                <br>
+                Besides to this, we also offer a large collection of E-Books at very fair pricing.
+             </p>
+             </div>
+             <div class="right_box">                      
+            </div>
+             <div class="right_box">
+             </div>         
+        </div><!--end of right content-->
+       <div class="clear"></div>
+       </div><!--end of center content--> 
+       </div>
+</div>  
+
+<script>
+    function formValidation()
+{
+    
+var uid = document.register.userid;
+var passid = document.register.passid;
+var uname = document.register.username;
+var uadd = document.register.address;
+var ucountry = document.register.country;
+var uzip = document.register.zip;
+var uemail = document.register.email;
+var umsex = document.register.msex;
+var ufsex = document.register.fsex; 
+if(userid_validation(uid,5,12))
+{
+if(passid_validation(passid,7,12))
+{
+if(allLetter(uname))
+{
+if(alphanumeric(uadd))
+{ 
+if(countryselect(ucountry))
+{
+if(allnumeric(uzip))
+{
+if(ValidateEmail(uemail))
+{
+if(validsex(umsex,ufsex))
+{
+}
+} 
+}
+} 
+}
+}
+}
+}
+return false;
+}
+
+function userid_validation(uid,mx,my)
+{
+var uid_len = uid.value.length;
+if (uid_len == 0 || uid_len >= my || uid_len < mx)
+{
+alert("User Id should not be empty / length be between "+mx+" to "+my);
+uid.focus();
+return false;
+}
+return true;
+}
+
+    function passid_validation(passid,mx,my)
+{
+var passid_len = passid.value.length;
+if (passid_len == 0 ||passid_len >= my || passid_len < mx)
+{
+alert("Password should not be empty / length be between "+mx+" to "+my);
+passid.focus();
+return false;
+}
+return true;
+}
+
+    function allLetter(uname)
+{ 
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+
+function alphanumeric(uadd)
+{ 
+var letters = /^[0-9a-zA-Z]+$/;
+if(uadd.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('User address must have alphanumeric characters only');
+uadd.focus();
+return false;
+}
+}
+
+function countryselect(ucountry)
+{
+if(ucountry.value == "Default")
+{
+alert('Select your country from the list');
+ucountry.focus();
+return false;
+}
+else
+{
+return true;
+}
+}    
+
+function allnumeric(uzip)
+{ 
+var numbers = /^[0-9]+$/;
+if(uzip.value.match(numbers))
+{
+return true;
+}
+else
+{
+alert('ZIP code must have numeric characters only');
+uzip.focus();
+return false;
+}
+}
+
+ function ValidateEmail(uemail)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if(uemail.value.match(mailformat))
+{
+return true;
+}
+else
+{
+alert("You have entered an invalid email address!");
+uemail.focus();
+return false;
+}
+}   
+ 
+
+    function validsex(umsex,ufsex)
+{
+x=0;
+
+if(umsex.checked) 
+{
+x++;
+} if(ufsex.checked)
+{
+x++; 
+}
+if(x==0)
+{
+alert('Select Male/Female');
+umsex.focus();
+return false;
+}
+else
+{
+alert('Form Successfully Submitted');
+window.location.reload()
+return true;}
+}
+
+</script>
+</body>
+</html>
